@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#A4A4A4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/CalculatorDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/display"
+            style="@style/CalculatorTextDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:drawableRight="@android:drawable/ic_input_delete"
+            android:text="@string/zero" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tax_answers"
+        style="@style/TableBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2" >
+
+        <TableRow
+            android:id="@+id/tax_calc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/answer_board" >
+
+            <TextView
+                android:id="@+id/taxTextView"
+                android:layout_marginLeft="2dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/taxText"
+                android:textColor="#DAEFED"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/taxDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textColor="#DAEFED"
+                android:textSize="22sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/total_with_tax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/answer_board" >
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:id="@+id/totalTextView"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/totalText"
+                android:textColor="#DAEFED"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/totalDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textColor="#DAEFED"
+                android:textSize="22sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tax_functions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1" >
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            style="@style/TableRowBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/taxPlus"
+                style="@style/CalculatorButton"
+                android:text="@string/taxPlus" />
+
+            <Button
+                android:id="@+id/taxMinus"
+                style="@style/CalculatorButton"
+                android:text="@string/taxMinus" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/standard_functions"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="0,1,2,3" >
+
+        <TableRow
+            android:id="@+id/tableRow0"
+            style="@style/TableRowBackground"
+            android:layout_width="match_parent" >
+
+            <Button
+                android:id="@+id/seven"
+                style="@style/CalculatorButton"
+                android:text="@string/seven" />
+
+            <Button
+                android:id="@+id/eight"
+                style="@style/CalculatorButton"
+                android:text="@string/eight" />
+
+            <Button
+                android:id="@+id/nine"
+                style="@style/CalculatorButton"
+                android:text="@string/nine" />
+
+            <Button
+                android:id="@+id/divide"
+                style="@style/CalculatorButton"
+                android:text="@string/divide" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            style="@style/TableRowBackground"
+            android:layout_width="match_parent" >
+
+            <Button
+                android:id="@+id/four"
+                style="@style/CalculatorButton"
+                android:text="@string/four" />
+
+            <Button
+                android:id="@+id/five"
+                style="@style/CalculatorButton"
+                android:text="@string/five" />
+
+            <Button
+                android:id="@+id/six"
+                style="@style/CalculatorButton"
+                android:text="@string/six" />
+
+            <Button
+                android:id="@+id/multiply"
+                style="@style/CalculatorButton"
+                android:text="@string/multiply" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            style="@style/TableRowBackground"
+            android:layout_width="match_parent" >
+
+            <Button
+                android:id="@+id/one"
+                style="@style/CalculatorButton"
+                android:text="@string/one" />
+
+            <Button
+                android:id="@+id/two"
+                style="@style/CalculatorButton"
+                android:text="@string/two" />
+
+            <Button
+                android:id="@+id/three"
+                style="@style/CalculatorButton"
+                android:text="@string/three" />
+
+            <Button
+                android:id="@+id/minus"
+                style="@style/CalculatorButton"
+                android:text="@string/minus" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            style="@style/TableRowBackground"
+            android:layout_width="match_parent" >
+
+            <Button
+                android:id="@+id/point"
+                style="@style/CalculatorButton"
+                android:text="@string/point" />
+
+            <Button
+                android:id="@+id/zero"
+                style="@style/CalculatorButton"
+                android:text="@string/zero" />
+
+            <Button
+                android:id="@+id/equalsto"
+                style="@style/CalculatorButton"
+                android:text="@string/equalto" />
+
+            <Button
+                android:id="@+id/plus"
+                style="@style/CalculatorButton"
+                android:text="@string/plus" />
+        </TableRow>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAds"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <com.inmobi.androidsdk.IMAdView
+                android:id="@+id/imAdview"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                adSlot="15"
+                appId="4028cbff38989ad10138c6abb8720817" />
+              <TextView
+                android:id="@+id/taxInfo"
+                android:gravity="center" 
+                android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+                android:text="@string/taxText"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+            
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayoutParent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            
+              <Spinner
+                android:id="@+id/provinces_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </TableLayout>
+
+</LinearLayout>
